@@ -98,7 +98,7 @@ colnames(all) <- gsub("^t", "Time", colnames(all))
 colnames(all) <- gsub("^f", "Freq", colnames(all))
 
 View(all)
-write.table(all, file = "allHAR.csv", row.names = FALSE)
+write.table(all, file = "allHAR.txt", row.names = FALSE)
 
 
 ##### Create a 2nd tidy data set (5) #####
@@ -121,4 +121,4 @@ newdata <- newdata[-c(2,3)]
 colnames(newdata) <- gsub("Avgsubject", "subject", colnames(newdata))
 
 View(newdata)
-write.table(newdata, file = "newdataHAR.csv", row.names = FALSE)
+write.table(newdata, file = "newdataHAR.txt", row.names = FALSE)
