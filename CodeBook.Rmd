@@ -1,0 +1,9 @@
+---
+title: 'CodeBook: Getting and Cleaning Data Project'
+author: "Kira Roybal"
+date: "11/26/2018"
+output: "html_document"
+---
+
+The data for this project comes from the UCI Human Activity Recognition study. The dataframe labeled "all" combines the training and test datasets from the study into one. This data was collected from a group of 30 subjects who all performed six activities (walking, walking upstairs, walking downstairs, sitting, standing, laying) while wearing a Samsung Galaxy SII on their waists. The data for this project ("all") are the features data collected by the smartphone accelerometers and gyroscopes, found in ./test/X_test.txt and ./train/X_train.txt. The "all" dataframe has included with it columns that indicate the subject, activity, and group (training or test) that correspond with each observation. It also excludes any variables that do not measure either mean or standard deviation. The dataframe "newdata" simply takes the mean of each variable in "all", grouped by the subject. It also includes a column to indicate the subject that corresponds to the averaged observations.
+
